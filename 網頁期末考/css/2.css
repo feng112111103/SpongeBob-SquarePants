@@ -1,0 +1,73 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #363535;
+    color: #ef2222;
+    text-align: center;
+  }
+  
+  /* 頁首樣式 */
+  .header {
+    background-color: #000000;
+    padding: 7px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+  }
+  
+  /* 遊戲容器 */
+  .game-container {
+    position: relative;
+    width: 800px;
+    height: 480px;
+    margin: 20px auto;
+    background-color: #FFDAB9;
+    border: 2px solid #FF6347;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* 蠟筆小新角色 */
+  .character {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/1.jpg');
+    background-size: cover;
+    cursor: pointer;
+    display: none;
+    border-radius: 360px;
+  }
+  
+  /* 計分板 */
+  .score-board {
+    margin-top: 30px;
+    font-size: 1.4em;
+  }
+  
+  /* 頁腳樣式 */
+  .footer {
+    font-size: 18px;
+    color: #333;
+    
+  }
+  .v126_54 {
+    width: 173px;
+    color: rgba(251,21,21,1);
+    position: absolute;
+    top: 680px;
+    left: 700px;
+    font-family: Atomic Age;
+    font-weight: Regular;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+  }

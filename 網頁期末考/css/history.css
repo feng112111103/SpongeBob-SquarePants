@@ -1,0 +1,111 @@
+/* 全局樣式設置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001b2a;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* 設置容器，使頁面居中 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 頁首樣式 */
+header {
+    background-color: #001b2a;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* 主要內容區域 */
+main {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 內容區域圖片設置 */
+.story-image, .history-image {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* 故事背景區塊 */
+.story-background {
+    margin-bottom: 40px;
+}
+
+/* 歷史區塊 */
+.show-history {
+    margin-bottom: 40px;
+}
+
+/* 段落文字 */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* 頁尾樣式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+.tx{
+    color: #fff;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #001b2a;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-item {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .navbar .nav-item:hover {
+            text-decoration: underline;
+        }
+
+        .photo-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            gap: 2rem;
+        }
+
+        .photo-gallery a {
+            display: block;
+            top: 50px;
+            width: 550px;
+            height: 500px;
+            background-color: #ddd;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .photo-gallery a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .photo-gallery a .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .photo-gallery a:hover img {
+            opacity: 0.3;
+        }
+
+        .photo-gallery a:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <ul>
+            <li><a href="./index.html">介紹</a></li>
+            <li><a href="./buy.html">商品</a></li>
+            <li><a href="./history.html">歷史</a></li>
+            <li><a href="./part2.html">作品</a></li>
+            <li><a href="22.html">組員</a></li>
+        </ul>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="photo-gallery">
+        <a href="./1.html" title="Photo 1">
+            <img src="./images/87 2號.jpg" alt="Photo 1">
+            <div class="overlay">林振宇<br>號稱亞東小丑本人<br>故事相當悽慘,總而言之就是相當可憐</div>
+        </a>
+        <a href="./part3.html" title="Photo 2">
+            <img src="./images/帥哥.jpg" alt="Photo 2">
+            <div class="overlay">林群峰<br>號稱亞東彭于晏本人<br>是一位自律到極致的大學生</div>
+        </a>
+        <a href="#" title="Photo 3">
+            <img src="./images/87.jpg" alt="Photo 3">
+            <div class="overlay">林峻毅<br>號稱亞東童(s)錦(b)程<br>熱愛晴天的人,也是小丑一個</div>
+        </a>
+    </div>
+</body>
+</html>

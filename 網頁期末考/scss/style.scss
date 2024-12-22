@@ -1,0 +1,87 @@
+.baby{
+    width: 450px;
+    height: 674px;
+    background-image: url(../images/海綿寶寶01.jpg);
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    left: 120px;
+    right: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-image 2s;
+
+    &:hover {
+        background-image: url(../images/海綿寶寶02.jpg);
+    }
+}
+
+.pai{
+    width: 450px;
+    height: 674px;
+    background-image: url(../images/派大星01.jpg);
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    left: 720px;
+    border-radius: 8px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-image 2s;
+
+    &:hover {
+        background-image: url(../images/派大興02.jpg);
+    }
+}
+
+.ga{
+    width: 450px;
+    height: 674px;
+    background-image: url(../images/章魚歌01.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 8px;
+    opacity: 1;
+    left: 1315px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-image 2s;
+
+    &:hover {
+        background-image: url(../images/章魚歌02.jpg);
+    }
+}
+
+.face{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-image: url(../images/跑.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    animation: move 6s infinite;
+}
+.box{
+    
+}
+@keyframes move {
+    0%{
+        transform: translate(0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1800px) rotate(90deg);
+    }
+    50%{
+        transform: translate(1800px,820px) rotate(180deg);
+    }
+    75%{
+        transform: translate(0px,820px) rotate(270deg);
+    }
+    100%{
+        transform: translate(0px) rotate(360deg);
+    }
+}

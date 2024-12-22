@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彭于晏介紹</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-item {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .navbar .nav-item:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 2rem;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .slider {
+            width: 641px;
+            height: 478px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+        }
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 641px;
+            height: 478px;
+            box-sizing: border-box;
+        }
+        img {
+            width: 641px;
+            height: 478px;
+            display: block;
+        }
+        .nav-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .nav-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .nav-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home" class="nav-item">首頁</a>
+        <a href="#bio" class="nav-item">個人簡介</a>
+        <a href="#career" class="nav-item">演藝生涯</a>
+        <a href="#gallery" class="nav-item">相片集</a>
+        <a href="#contact" class="nav-item">聯絡</a>
+    </div>
+
+    <!-- Main Content -->
+    
+    <div class="content" id="home">
+        <h1>認識彭于晏</h1>
+        <div class="slider">
+            <div class="slider-container" id="sliderContainer">
+                <div class="slide"><img src="./images/彭于晏01.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="./images/彭于晏06.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="./images/彭于晏05.gif" alt="Image 3"></div>
+            </div>
+            <div class="nav-buttons">
+                <button id="prevButton">&#10094;</button>
+                <button id="nextButton">&#10095;</button>
+            </div>
+        </div>
+        <p>彭于晏（Eddie Peng），是一位著名的台灣演員，以其精湛的演技與敬業精神廣受歡迎。他的多樣化角色和出色的身體素質讓他成為亞洲影壇的代表性人物之一。</p>
+    </div>
+
+    <div class="content" id="bio">
+        <h2>個人簡介</h2>
+        <p>彭于晏，1982年出生於台灣澎湖，於加拿大完成學業後進入演藝圈。他的陽光形象與謙遜的個性贏得了廣大粉絲的喜愛。</p>
+    </div>
+
+    <div class="content" id="career">
+        <h2>演藝生涯</h2>
+        <p>從偶像劇起步，彭于晏逐漸轉型為電影演員。他參演了多部票房和口碑雙豐收的電影，如<a href="https://zh.wikipedia.org/zh-tw/%E9%BB%83%E9%A3%9B%E9%B4%BB%E4%B9%8B%E8%8B%B1%E9%9B%84%E6%9C%89%E5%A4%A2" target="_blank">《翻滾吧！阿信》</a>、<a href="https://zh.wikipedia.org/zh-tw/%E9%BB%83%E9%A3%9B%E9%B4%BB%E4%B9%8B%E8%8B%B1%E9%9B%84%E6%9C%89%E5%A4%A2" target="_blank">《黃飛鴻之英雄有夢》</a>、<a href="https://zh.wikipedia.org/zh-tw/%E6%82%9F%E7%A9%BA%E4%BC%A0" target="_blank">《悟空傳》</a>等。他的敬業態度讓人印象深刻，為角色投入大量時間進行訓練和研究。</p>
+    </div>
+
+    <div class="content" id="gallery">
+        <h2>相片集</h2>
+        <p>以下是彭于晏的部分精彩照片：</p>
+        <img src="./images/彭于晏02.jpg" alt="彭于晏相片1">
+        <img src="./images/彭于晏03.jpg" alt="彭于晏相片2">
+    </div>
+
+    <div class="content" id="contact">
+        <h2>聯絡我們</h2>
+        <p>如果您想了解更多關於彭于晏的信息，請通過社交媒體關注我們！</p>
+        <a href="https://www.instagram.com/yuyanpeng/" target="_blank"><img src="./images/彭于晏04.gif" alt=""></a>
+    </div>
+    
+    <script>
+        const sliderContainer = document.getElementById('sliderContainer');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+    
+        let currentIndex = 0;
+    
+        function updateSlider() {
+            const slideWidth = sliderContainer.children[0].clientWidth;
+            sliderContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+    
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : sliderContainer.children.length - 1;
+            updateSlider();
+        });
+    
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < sliderContainer.children.length - 1) ? currentIndex + 1 : 0;
+            updateSlider();
+        });
+    
+        window.addEventListener('resize', updateSlider);
+    </script>
+    
+</body>
+</html>
