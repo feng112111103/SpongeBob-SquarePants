@@ -1,0 +1,109 @@
+@charset "UTF-8";
+.baby {
+  width: 450px;
+  height: 500px;
+  background-image: url(../images/87\ 2號.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  left: 150px;
+  right: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-image 2s;
+}
+.baby:hover {
+  background-image: url(../images/猴01.jpg);
+}
+
+.pai {
+  width: 450px;
+  height: 500px;
+  background-image: url(../images/帥哥.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  left: 750px;
+  border-radius: 8px;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-image 2s;
+}
+.pai:hover {
+  background-image: url(../images/帥哥01.jpg);
+}
+
+.ga {
+  width: 450px;
+  height: 500px;
+  background-image: url(../images/87.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 8px;
+  opacity: 1;
+  left: 1350px;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-image 2s;
+}
+.ga:hover {
+  background-image: url(../images/猴02.jpg);
+}
+
+.face {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-image: url(../images/水母.png);
+  border-radius: 50%;
+  background-size: cover;
+  animation: move 6s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(1800px) rotate(90deg);
+  }
+  50% {
+    transform: translate(1800px, 820px) rotate(180deg);
+  }
+  75% {
+    transform: translate(0px, 820px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0px) rotate(360deg);
+  }
+}
+.ppoo {
+  width: 100%;
+  height: 78px;
+  text-align: center;
+  position: relative;
+  font-size: 80px;
+  top: 500px;
+}
+
+.ppoo li {
+  list-style-type: none;
+  margin: 0px 170px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 2px #fff;
+  border: 1px solid orange;
+  color: #fff;
+}
+
+.ppoo ul {
+  margin: 0px;
+  padding: 10px;
+}/*# sourceMappingURL=22.css.map */

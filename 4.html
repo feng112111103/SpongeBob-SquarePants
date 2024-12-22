@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蠟筆小新的冒險故事</title>
+  <link rel="stylesheet" href="./css/4.css">
+</head>
+<body>
+  <header class="header">
+    <h1>蠟筆小新的冒險故事</h1>
+    <p>跟著小新一起探索他的有趣生活！</p>
+  </header>
+
+  <main class="story-container">
+    <!-- 第一幕 -->
+    <section class="story-section" id="scene1">
+      <h2>第一幕：遲到的小新</h2>
+      <p>今天小新睡過頭了，他需要趕快上學！</p>
+      <img src="./images/1.gif" alt="小新跑步" class="scene-image">
+      <button class="next-button" onclick="showNextScene(2)">下一幕</button>
+    </section>
+
+    <!-- 第二幕 -->
+    <section class="story-section hidden" id="scene2">
+      <h2>第二幕：學校的趣事</h2>
+      <p>在學校裡，小新開始調皮搗蛋，引發了一場大笑話！</p>
+      <img src="./images/2.gif" alt="小新大笑" class="scene-image">
+      <button class="next-button" onclick="showNextScene(3)">下一幕</button>
+    </section>
+
+    <!-- 第三幕 -->
+    <section class="story-section hidden" id="scene3">
+      <h2>第三幕：與小白的冒險</h2>
+      <p>放學後，小新和小白一起進行了一場尋寶冒險。</p>
+      <img src="./images/3.gif" alt="小新與小白" class="scene-image">
+      <button class="next-button" onclick="restartStory()">重新</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="./1.html" class="v126_54">回首頁</a>
+  </footer>
+
+  <script src="./js/4.js"></script>
+</body>
+</html>
