@@ -124,11 +124,34 @@
             float: right;
             padding: 5px;
         }
+        .back{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(550px); }
+            100% { transform: translateX(0); }
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background-image: url(./images/彭于晏LOGO.jpg);
+            animation: move 5s infinite; /* 套用動畫，持續循環 */
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
+        <a href="./index.html"><img src="./images/回首頁.jpg" alt="" class="back"></a>
         <a href="#home" class="nav-item">首頁</a>
         <a href="#bio" class="nav-item">個人簡介</a>
         <a href="#career" class="nav-item">演藝生涯</a>
@@ -173,6 +196,7 @@
 
     <div class="content" id="contact">
         <h2>聯絡我們</h2>
+        <div class="box"></div>
         <p>如果您想了解更多關於彭于晏的信息，請通過社交媒體關注我們！</p>
         <a href="https://www.instagram.com/yuyanpeng/" target="_blank"><img src="./images/IG.png" alt="" class="ig"></a> <a href="https://www.facebook.com/eddiepengsg/?locale=zh_TW" target="_blank"><img src="./images/fb.png" alt="" class="fb"></a>
         <img src="./images/彭于晏04.gif" alt="">
