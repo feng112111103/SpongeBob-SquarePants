@@ -1,0 +1,41 @@
+.photo{
+width: 300px;
+height: 300px;
+border-radius: 50%;
+display: flex;   
+}
+.character{
+    text-align: center;
+    color: #ffffff;
+}
+.menu{
+    color: #809ab1;
+}
+.face {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(/img/467371135_1263416101525086_824554150557643791_n.jpg);
+    background-size: cover;
+    animation: move 5s infinite;
+    
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0%);
+    }
+    50% {
+      transform: translate(1350px);
+      background-image: url(/img/467371135_1263416101525086_824554150557643791_n.jpg);
+    }
+    100% {
+      transform: translate(0px);
+    }
+  }/*# sourceMappingURL=style.css.map */
+.button{
+ color: #ffffff;
+}
+.button:hover{
+ color: #02aaf8;
+}
